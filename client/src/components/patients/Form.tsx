@@ -117,7 +117,7 @@ function PatientForm({ onRegisterSuccess }: { onRegisterSuccess: () => void }) {
               error={!!errors.name}
               id="outlined-error-helper-text"
               label={errors.name ? 'Error' : 'Name'}
-              defaultValue="Jhon"
+              placeholder="Jhon"
               helperText={errors.name ? errors.name.message : ''}
             />
 
@@ -148,7 +148,7 @@ function PatientForm({ onRegisterSuccess }: { onRegisterSuccess: () => void }) {
                   message: "Country code must be in the format +123"
                 }
               })}
-              defaultValue={"+1"}
+              placeholder="+1"
               error={!!errors.countryCode}
               helperText={errors.countryCode ? errors.countryCode.message : ''}
             />
@@ -163,7 +163,7 @@ function PatientForm({ onRegisterSuccess }: { onRegisterSuccess: () => void }) {
                   message: "Phone number must be numeric"
                 }
               })}
-              defaultValue={123456}
+              placeholder='123456'
               error={!!errors.phoneNumber}
               helperText={errors.phoneNumber ? errors.phoneNumber.message : ''}
             />
@@ -174,16 +174,15 @@ function PatientForm({ onRegisterSuccess }: { onRegisterSuccess: () => void }) {
               {...register("address.country")}
               error={!!errors.address?.country}
               id="outlined-error-helper-text"
-              defaultValue="US"
               helperText={errors.address?.country ? errors.address?.country.message : ''}
               label="Country"
             />
 
             <TextField
+              label="City"
               {...register("address.city",)}
               error={!!errors.address?.city}
               id="outlined-error-helper-text"
-              defaultValue="New York"
               helperText={errors.address?.city ? errors.address?.city.message : ''}
             />
 
@@ -200,7 +199,6 @@ function PatientForm({ onRegisterSuccess }: { onRegisterSuccess: () => void }) {
               {...register("address.zipCode")}
               error={!!errors.address?.zipCode}
               id="outlined-error-helper-text"
-              defaultValue=""
               helperText={errors.address?.zipCode ? errors.address?.zipCode.message : ''}
               label="Zip Code"
             />
