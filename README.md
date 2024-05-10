@@ -56,8 +56,6 @@ These are some steps you need to follow in order to run this app, as some soluti
 
 ## Usage
 - Visit http://localhost:3000 to access the application.
-- Home page lists all available memo tests.
-- Click on a test to start or continue a game session.
 
 ## Errors
 In case you encounter some of these errors during the local deploy.
