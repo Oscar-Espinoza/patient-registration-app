@@ -1,7 +1,7 @@
 # Patient registration app
 
 ## Overview
-This are some steps you need to follow in order to run this app, as some solutions for common errors. Remember to add your information 
+These are some steps you need to follow in order to run this app, as some solutions for common errors. Remember to add your information 
 ## Prerequisites
 - Docker
 - Node.js
@@ -25,7 +25,7 @@ This are some steps you need to follow in order to run this app, as some solutio
     laravelsail/php81-composer:latest \\\
     composer install --ignore-platform-reqs
 
-    If you can't copy it follow this link(https://laravel.com/docs/10.x/sail#:~:text=docker%20run%20%2D%2Drm,ignore%2Dplatform%2Dreqs) and copy it from Larave's documentation
+    If you can't copy it follow this [link](https://laravel.com/docs/10.x/sail#:~:text=docker%20run%20%2D%2Drm,ignore%2Dplatform%2Dreqs) and copy it from the Laravel's documentation
 
     If you encounter the message "/var/www/html/vendor/doctrine does not exist and could not be created" you can run sudo chown -R mike /ROOT_OF_APP && chmod -R 777 /ROOT_OF_APP/vendor
 
