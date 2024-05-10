@@ -27,7 +27,7 @@ These are some steps you need to follow in order to run this app, as some soluti
 
     If you can't copy it follow this [link](https://laravel.com/docs/10.x/sail#:~:text=docker%20run%20%2D%2Drm,ignore%2Dplatform%2Dreqs) and copy it from the Laravel's documentation
 
-    If you encounter the message "/var/www/html/vendor/doctrine does not exist and could not be created" you can run sudo chown -R mike /ROOT_OF_APP && chmod -R 777 /ROOT_OF_APP/vendor
+    If you encounter the message "/var/www/html/vendor/doctrine does not exist and could not be created" you can run sudo chown -R yourUserName /ROOT_OF_APP && chmod -R 777 /ROOT_OF_APP/vendor
 
     Create your alias for sail, here is an example:
 
@@ -45,13 +45,13 @@ These are some steps you need to follow in order to run this app, as some soluti
 - sail php artisan migrate
 
 ## Usage
-- Visit `http://localhost:80` to access the application.
+- Visit http://localhost:80 to access the application.
 
 ## Frontend:
   Navigate to the `client` directory with 'cd client'. Use `npm install` to install dependencies and `npm run dev` to start the development server.
 
 ## Usage
-- Visit `http://localhost:3000` to access the application.
+- Visit http://localhost:3000 to access the application.
 - Home page lists all available memo tests.
 - Click on a test to start or continue a game session.
 
