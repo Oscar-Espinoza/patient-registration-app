@@ -31,7 +31,7 @@ These are some steps you need to follow in order to run this app, as some soluti
 
     Create your alias for sail, here is an example:
 
-    - alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+    - run: alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
     Now you can run 
 
