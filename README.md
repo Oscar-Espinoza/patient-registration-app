@@ -52,8 +52,8 @@ These are some steps you need to follow in order to run this app, as some soluti
   this is to install composer temporarily and install dependencies, once it's done, run `docker-compose up`, now, in order to migrate and seed the database, run:
 
 - sail php artisan migrate
-- sail php artisan storage:link to be able to access the document photos
-- sail php artisan queue:work to process queued tasks, jobs and send emails asynchronously 
+- sail php artisan storage:link
+- sail php artisan queue:work
 
 ## Usage
 - Visit http://localhost:80 to access the application.
