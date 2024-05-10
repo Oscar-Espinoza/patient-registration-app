@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c90b509545303f5bfdba0713fe48406b",
+    "content-hash": "1c2c84606ea738f5602d0c8fd050a509",
     "packages": [
         {
             "name": "brick/math",
@@ -3190,6 +3190,64 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "saeedvaziry/laravel-async",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saeedvaziry/laravel-async.git",
+                "reference": "88e92d14eb44c3c9cb0549f99bd1e64a1c56a8fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saeedvaziry/laravel-async/zipball/88e92d14eb44c3c9cb0549f99bd1e64a1c56a8fc",
+                "reference": "88e92d14eb44c3c9cb0549f99bd1e64a1c56a8fc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.0|^10.0|^11.0",
+                "illuminate/process": "^9.0|^10.0|^11.0",
+                "illuminate/support": "^9.0|^10.0|^11.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.13",
+                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.0|^10.0|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SaeedVaziry\\LaravelAsync\\LaravelAsyncServiceProvider"
+                    ],
+                    "aliases": {
+                        "AsyncHandler": "SaeedVaziry\\LaravelAsync\\Facades\\AsyncHandler"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SaeedVaziry\\LaravelAsync\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saeed Vaziry",
+                    "email": "mr.saeedvaziry@gmail.com"
+                }
+            ],
+            "description": "Laravel Async",
+            "support": {
+                "issues": "https://github.com/saeedvaziry/laravel-async/issues",
+                "source": "https://github.com/saeedvaziry/laravel-async/tree/1.2.1"
+            },
+            "time": "2024-05-01T19:32:59+00:00"
         },
         {
             "name": "symfony/console",

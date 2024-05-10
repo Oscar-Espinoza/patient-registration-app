@@ -27,13 +27,18 @@ These are some steps you need to follow in order to run this app, as some soluti
 
     If you can't copy it follow this [link](https://laravel.com/docs/10.x/sail#:~:text=docker%20run%20%2D%2Drm,ignore%2Dplatform%2Dreqs) and copy it from the Laravel's documentation
 
-    If you encounter the message "/var/www/html/vendor/doctrine does not exist and could not be created" you can run sudo chown -R yourUserName /ROOT_OF_APP && chmod -R 777 /ROOT_OF_APP/vendor
+    If you encounter the message 
+    - "/var/www/html/vendor/doctrine does not exist and could not be created"
+
+      You can run:
+
+    - sudo chown -R yourUserName /ROOT_OF_APP && chmod -R 777 /ROOT_OF_APP/vendor
 
     Create your alias for sail, here is an example:
 
     - run: alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
-    Now you can run 
+    Now you can run:
 
     - sail up
 
@@ -47,6 +52,8 @@ These are some steps you need to follow in order to run this app, as some soluti
   this is to install composer temporarily and install dependencies, once it's done, run `docker-compose up`, now, in order to migrate and seed the database, run:
 
 - sail php artisan migrate
+- sail php artisan storage:link to be able to access the document photos
+- sail php artisan queue:work to process queued tasks, jobs and send emails asynchronously 
 
 ## Usage
 - Visit http://localhost:80 to access the application.

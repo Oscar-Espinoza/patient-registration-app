@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Patient;
 use App\Http\Requests\StorePatientRequest;
 use Illuminate\Http\Request;
-use Illuminate\Auth\Events\Registered;
-
+use App\Jobs\SendVerificationEmail;
 
 class PatientController extends Controller
 {
@@ -33,7 +32,7 @@ class PatientController extends Controller
 
     $patient->save();
 
-    event(new Registered($patient));
+    SendVerificationEmail::dispatch($patient);
 
     return response()->json($patient, 201);
   }
