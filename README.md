@@ -47,6 +47,10 @@ These are some steps you need to follow in order to run this app, as some soluti
 ## Usage
 - Visit http://localhost:80 to access the application.
 
+## Usage
+- http://localhost:80/api/patients to access patients list, if there are no patients created it should show an empty array.
+- http://localhost:80/storage/documents/image-name.jpg to access a patient's document photo.
+
 ## Frontend:
   Navigate to the `client` directory with 'cd client'. Use `npm install` to install dependencies and `npm run dev` to start the development server.
 
