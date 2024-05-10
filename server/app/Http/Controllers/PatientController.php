@@ -33,7 +33,7 @@ class PatientController extends Controller
 
     $patient->save();
 
-    // event(new Registered($patient));
+    event(new Registered($patient));
 
     return response()->json($patient, 201);
   }

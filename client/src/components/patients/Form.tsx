@@ -1,6 +1,6 @@
 import { useQueryClient } from '@tanstack/react-query';
 import { Patient, PatientFields } from '../../types'
-import { API_URL } from '../../constants';
+import { APP_URL } from '../../constants';
 import { errorNotify } from '../../utils';
 
 import { Box, Button, Stack, Paper, TextField, Typography } from '@mui/material';
@@ -45,7 +45,7 @@ function PatientForm({ onRegisterSuccess }: { onRegisterSuccess: () => void }) {
 
     try {
       setLoading(true)
-      const res = await fetch(`${API_URL}/patients`, {
+      const res = await fetch(`${APP_URL}/api/patients`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
