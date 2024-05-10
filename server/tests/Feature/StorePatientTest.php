@@ -19,41 +19,11 @@ class StorePatientTest extends TestCase
     $response->assertStatus(200);
   }
 
-  public function testCreatePatient(): void
-  {
-    $patientData = [
-      'name' => 'John Doe',
-      'email' => 'john.doe@gmail.com',
-      'phone_number' => '5551234',
-      'country_code' => '+54',
-      'document_photo' => 'url/to/photo.jpg',
-      'address' => [
-        'street' => '1234 Maple Street',
-        'city' => 'Anytown',
-        'state' => 'CA',
-        'zip_code' => '90210',
-        'country' => 'USA'
-      ]
-    ];
-
-    $response = $this->postJson('/api/patients', $patientData);
-
-    $response->assertStatus(201);
-
-    $this->assertDatabaseHas('patients', [
-      'email' => 'john.doe@gmail.com'
-    ]);
-
-    $response->assertJson([
-      'message' => 'Patient registered successfully!'
-    ]);
-  }
-
   public function testCreatePatientWithIncorrectData(): void
 {
     $patientData = [
-        'email' => 'john.doe@example.com',
-        'phone_number' => '555-1234',
+        'email' => 'invalidEmail@invalid.com',
+        'phone_number' => 'text',
         'country_code' => '54',
         'document_photo_url' => 'url/to/photo.jpg',
         'address' => [

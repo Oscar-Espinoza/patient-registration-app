@@ -33,7 +33,11 @@ These are some steps you need to follow in order to run this app, as some soluti
 
     - alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
-    The app uses port 80 and port 3306 for mysql, if you run sail up and you get a message saying those port are in use you can run:
+    Now you can run 
+
+    - sail up
+
+    The app uses port 80 and port 3306 for mysql, if you get a message saying those port are in use you can run:
 
     - sevice mysql stop
     - service apache2 stop
