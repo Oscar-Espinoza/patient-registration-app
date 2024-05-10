@@ -8,8 +8,7 @@ These are some steps you need to follow in order to run this app, as some soluti
 - Git
 
 ## Setup and Installation
-1. Clone the repository:
-  - git clone https://github.com/Oscar-Espinoza/patient-registration-app.git
+1. Clone the repository
 
 2. Navigate to the project directory:
   cd patient-registration-app
