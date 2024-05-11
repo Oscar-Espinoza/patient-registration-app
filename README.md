@@ -52,7 +52,7 @@ These are some steps you need to follow in order to run this app, as some soluti
 
 - sail php artisan migrate
 - sail php artisan storage:link
-- sail php artisan queue:work
+- sail php artisan queue:work (Remember to add QUEUE_CONNECTION=database to your env file so jobs can be queued and be handled asynchronously)
 
 ## Usage
 - Visit http://localhost:80 to access the application.
